@@ -12,7 +12,7 @@ import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const posts = allContentfulEvent.nodes
   let postCounter = 0
 
   return (
@@ -73,6 +73,36 @@ const indexQuery = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+`
+
+const thumbnailQuery = graphql`
+  allContentfulEvent(sort: {fields: [date], order: DESC}) {
+    nodes {
+      title
+      venue {
+        lon
+        lat
+      }
+      date(formatString: "YYYY MMMM DD")
+      thumbnail {
+        image {
+          title
+          file {
+            url
+            fileName
+            contentType
+          }
+        }
+      }
+      body {
+        content {
+          content {
+            value
           }
         }
       }
