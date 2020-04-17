@@ -2,6 +2,10 @@ const path = require(`path`)
 const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const sharp = require("sharp")
+sharp.simd(false)
+sharp.cache(false)
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
