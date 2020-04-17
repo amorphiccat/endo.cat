@@ -12,7 +12,7 @@ import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = allContentfulEvent.nodes
+  const posts = data.allContentfulEvent.nodes
   let postCounter = 0
 
   return (
@@ -30,11 +30,11 @@ const BlogIndex = ({ data }, location) => {
         </header>
       )}
       <div className="post-feed">
-        {posts.map(({ node }) => {
+        {posts.map(node => {
           postCounter++
           return (
             <PostCard
-              key={node.fields.slug}
+              key={node.id}
               count={postCounter}
               node={node}
               postClass={`post`}
@@ -54,55 +54,30 @@ const indexQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM D, YYYY")
+    allContentfulEvent(sort: { fields: [date], order: DESC }) {
+      nodes {
+        id
+        title
+        venue {
+          lon
+          lat
+        }
+        date(formatString: "YYYY MMMM DD")
+        thumbnail {
+          image {
             title
-            description
-            tags
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 1360) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+            file {
+              url
+              fileName
+              contentType
             }
           }
         }
-      }
-    }
-  }
-`
-
-const thumbnailQuery = graphql`
-  allContentfulEvent(sort: {fields: [date], order: DESC}) {
-    nodes {
-      title
-      venue {
-        lon
-        lat
-      }
-      date(formatString: "YYYY MMMM DD")
-      thumbnail {
-        image {
-          title
-          file {
-            url
-            fileName
-            contentType
-          }
-        }
-      }
-      body {
-        content {
+        body {
           content {
-            value
+            content {
+              value
+            }
           }
         }
       }
