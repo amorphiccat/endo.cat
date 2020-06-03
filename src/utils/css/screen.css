@@ -49,7 +49,7 @@ body {
 
 figcaption {
   padding: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.4em;
   font-weight: 600;
   text-align: center;
@@ -58,10 +58,10 @@ figcaption {
 }
 
 figcaption {
-  color: #c3c3c5;
+  color: #b3b3b5;
 }
 figcaption:hover {
-  color: #fcfcfe;
+  color: #fdfdff;
 }
 /* Layout
 /* ---------------------------------------------------------- */
