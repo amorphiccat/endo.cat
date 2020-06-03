@@ -5,5 +5,5 @@ module.exports = {
   url: "https://endo.cat", // Domain of your site without prefix!
   prefix: "/",
   author: "Ana",
-  twitter: "",
+  twitter: "anamorphic_",
 }

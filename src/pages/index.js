@@ -12,7 +12,7 @@ import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allContentfulEvent.nodes
+  const posts = data.allMarkdownRemark.edges
   let postCounter = 0
 
   return (
@@ -30,11 +30,11 @@ const BlogIndex = ({ data }, location) => {
         </header>
       )}
       <div className="post-feed">
-        {posts.map(node => {
+        {posts.map(({ node }) => {
           postCounter++
           return (
             <PostCard
-              key={node.id}
+              key={node.fields.slug}
               count={postCounter}
               node={node}
               postClass={`post`}
@@ -54,29 +54,24 @@ const indexQuery = graphql`
         description
       }
     }
-    allContentfulEvent(sort: { fields: [date], order: DESC }) {
-      nodes {
-        id
-        title
-        venue {
-          lon
-          lat
-        }
-        date(formatString: "YYYY MMMM DD")
-        thumbnail {
-          image {
-            title
-            file {
-              url
-              fileName
-              contentType
-            }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
           }
-        }
-        body {
-          content {
-            content {
-              value
+          frontmatter {
+            date(formatString: "MMMM D, YYYY")
+            title
+            description
+            tags
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1360) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
