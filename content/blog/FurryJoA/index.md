@@ -2,8 +2,8 @@
 title: FurryJoA
 date: "2020-02-08"
 thumbnail: ./FurryJoA_INF_000.jpeg
-tags:
-  [
+tags: [
+    # Gathering Fursuiters
     Endo,
     Fletcher,
     Modula,
@@ -13,6 +13,19 @@ tags:
     Cape,
     Tachion,
     Tart,
+    # FurryJoA Fursuiters
+    Sugarball,
+    Haesol,
+    Boogidori,
+    Capia,
+    Aosa,
+    Vulpe,
+    Gao,
+    Dove,
+    Iri,
+    Mango,
+    Myeongi,
+    # Photographers
     Jisu,
     Baetagi,
     Nanachi,
@@ -20,6 +33,8 @@ tags:
   ]
 description: 대한민국 최초의 퍼리 컨벤션, 퍼리조아
 ---
+
+<!--도브하고 망고하고 엔도하고 걸어오는 사진이 안 보임(나중에 찾기)-->
 
 2020년 2월 8일, 대한민국 최초의 퍼리 컨벤션인 퍼리조아가 송도 컨벤시아에서 열렸습니다. 동시에 엔도의 데뷔이기도 했죠! 작년 10월에 일찌감치 스폰서 등록을 한 후 몇 달 동안 기다려오던 퍼리조아, 불과 1주일 전인 2월 1일이 엔도의 생일이었습니다.
 
@@ -37,4 +52,16 @@ description: 대한민국 최초의 퍼리 컨벤션, 퍼리조아
 ![GatheringEndoTachion](./Gathering_Jisu_004.jpg "Photo by Jisu, Endo hugging Tachion")
 ![GatheringEndoShield](./Gathering_Jisu_007.jpg "Photo by Jisu, Endo hugging Shield")
 ![GatheringEndoTart](./Gathering_Jisu_010.jpg "Photo by Jisu, Endo standing next to Tart awkwardly")
-![GatheringEndo2](./Gathering_Nanachi_001.jpg "Photo by Nanachi, Endo saying hello")
+![GatheringEndo](./Gathering_Nanachi_001.jpg "Photo by Nanachi, Endo saying hello")
+
+![FurryJoAEndoBorryCapiaDoveBoogidori1](./FurryJoA_Jisu_020.jpg "Photo by Jisu, Furries getting together")
+![FurryJoAEndoBorryCapiaDoveBoogidori2](./FurryJoA_Jisu_026.jpg "Photo by Jisu, Furries taking photo together")
+![FurryJoAEndoSugarballCapia](./FurryJoA_Jisu_033.jpg "Photo by Jisu, Endo with Sugarball and Capia")
+![FurryJoAEndoSugarballCapia](./FurryJoA_Jisu_027.jpg "Photo by Jisu, Endo with Iri and Myeongi")
+![FurryJoAEndoAosa](./FurryJoA_Jisu_006.jpg "Photo by Jisu, Aosa petting Endo")
+![FurryJoAEndoVulpe](./FurryJoA_Jisu_017.jpg "Photo by Jisu, Endo standing with Vulpe")
+![FurryJoAEndoSugarballCapia](./FurryJoA_Jisu_033.jpg "Photo by Jisu, Endo with Sugarball and Capia")
+![FurryJoAEndoBoogidoriHaesolSugarballCapia](./FurryJoA_Jisu_005.jpg "Photo by Jisu, Endo with Boogidori, Haesol, Sugarball, and Capia")
+![FurryJoAEndoSugarballGao](./FurryJoA_Jisu_018.jpg "Photo by Jisu, Endo with Gao")
+![FurryJoAEndoCapia](./FurryJoA_Jisu_037.jpg "Photo by Jisu, Endo being lifted by Capia")
+![FurryJoAEndoFletcherMango](./FurryJoA_Jisu_033.jpg "Photo by Jisu, Tail of Furries - Endo, Fletcher, and Mango")
