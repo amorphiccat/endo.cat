@@ -4,6 +4,6 @@ module.exports = {
   description: "Endo's fursuit photo archive",
   url: "https://endo.cat", // Domain of your site without prefix!
   prefix: "/",
-  author: "Ana",
+  author: "Cat Amorphic",
   twitter: "anamorphic_",
 }

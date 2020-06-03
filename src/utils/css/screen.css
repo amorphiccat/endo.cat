@@ -33,8 +33,9 @@ body {
 
 .img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: auto !important;
+  height: 768 !important;
+  max-height: 768 !important;
   background-position: center center;
   background-size: cover;
   border-radius: 100%;
@@ -46,6 +47,22 @@ body {
   text-indent: -9999px;
 }
 
+figcaption {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.4;
+  font-style: italic;
+}
+
+figcaption {
+  color: #c3c3c5;
+}
+figcaption:hover {
+  color: #fcfcfe;
+}
 /* Layout
 /* ---------------------------------------------------------- */
 

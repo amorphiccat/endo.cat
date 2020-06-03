@@ -48,31 +48,15 @@ const Layout = props => {
           <div className="site-head-right">
             <div className="social-links">
               <a
-                href="https://www.facebook.com"
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-              <a
-                href="https://twitter.com"
+                href="https://twitter.com/endocat_"
                 title="Twitter"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Twitter
               </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
               <a
-                href="https://github.com/vaporwavy/gatsby-london-after-midnight"
+                href="https://github.com/amorphiccat/endo.cat"
                 title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
