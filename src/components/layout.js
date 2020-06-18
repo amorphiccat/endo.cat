@@ -32,6 +32,9 @@ const Layout = props => {
               <li className="nav-about" role="menuitem">
                 <Link to={`/about`}>About</Link>
               </li>
+              <li className="nav-purrtpolio" role="menuitem">
+                <Link to={`/purrtpolio`}>Purrtpolio</Link>
+              </li>
               <li className="nav-elements" role="menuitem">
                 <Link to={`/elements`}>Elements</Link>
               </li>
@@ -62,6 +65,14 @@ const Layout = props => {
                 rel="noopener noreferrer"
               >
                 GitHub
+              </a>
+              <a
+                href="hello@endo.cat"
+                title="Email"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Email
               </a>
             </div>
           </div>
